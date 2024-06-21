@@ -29,7 +29,7 @@ np.random.seed(42)
 tf.set_random_seed(42)
 os.environ['PYTHONHASHSEED'] = '0'
 
-flags = tf.flags
+flags = absl.flags
 FLAGS = flags.FLAGS
 # args for training
 flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate.')
